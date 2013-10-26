@@ -19,7 +19,7 @@ namespace Sample04___SubTask
                 {
                     Thread.Sleep(2000);
                     Console.WriteLine("Inner task");
-                });
+                }, TaskCreationOptions.AttachedToParent);
 
                 //inner.Wait();
 
